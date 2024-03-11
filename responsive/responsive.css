@@ -1,0 +1,55 @@
+/* Estilos para telas menores ou iguais a 768px */
+@media (max-width: 768px) {
+  /* Ajuste do layout principal */
+  .program {
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+  }
+
+  /* Ajuste da seção principal da página */
+  .program__page {
+    width: 100%;
+    margin: 10% 0;
+  }
+
+  /* Ajustes na seção relacionada à mensagem recebida */
+  .program__rec {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Ocultar imagem na seção relacionada à mensagem recebida */
+  .program__img {
+    display: none;
+  }
+
+  /* Ajustes de padding para elementos na seção relacionada à mensagem recebida */
+  .program__rec__h1,
+  .program__rec__p,
+  .program__rec__h1,
+  .program__rec__p {
+    padding: 5%;
+  }
+
+  /* Ajustes no rodapé */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5%;
+    font-size: 14px;
+  }
+}
+
+/* Estilos para telas menores ou iguais a 580px */
+@media (max-width: 580px) {
+  /* Ajustes adicionais no rodapé para telas menores */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5%;
+    font-size: 14px;
+  }
+}

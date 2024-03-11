@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./responsive/responsive.css" />
+    <link rel="shortcut icon" href="./assets/Logo.svg" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Decodificador de texto</title>
+  </head>
+  <body>
+    <header class="nav">
+      <img src="./assets/Logo.svg" alt="logo Alura" />
+    </header>
+    <!-- Conteúdo principal da página -->
+    <main class="program">
+      <section class="program__page">
+        <!-- Área de texto para entrada do usuário -->
+        <textarea
+          cols="50"
+          rows="10"
+          wrap="hard"
+          placeholder="Digite seu texto para criptografar"
+          class="program__textArea"
+        ></textarea>
+        <!-- Mensagem de erro -->
+        <p class="error-message"></p>
+        <!-- Informação sobre restrições no texto -->
+        <p class="program__p">
+          <img
+            src="./assets/alert-icon.png"
+            class="program__alert-icon"
+          />Apenas letras minúsculas e sem acento
+        </p>
+        <!-- Botões de ação -->
+        <div class="program__buttons">
+          <button class="buttons__button1" onclick="crip()">
+            Criptografar
+          </button>
+          <button class="buttons__button2" onclick="descrip()">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+      <!-- Elementos relacionados à mensagem recebida -->
+      <div class="program__rec">
+        <img
+          src="./assets/High quality products 1 1.svg"
+          class="program__img"
+        />
+        <h1 class="program__rec__h1">Nenhuma mensagem encontrada</h1>
+        <p class="program__rec__p">
+          Digite um texto que você deseja criptografar ou descriptografar
+        </p>
+        <p class="program__rec__pHidden" hidden>HelloFriend</p>
+        <button
+          class="program__rec__btn"
+          hidden
+          id="copy-btn"
+          onclick="copyText()"
+        >
+          Copiar
+        </button>
+      </div>
+    </main>
+    <hr />
+    <!-- Rodapé da página -->
+    <footer>
+      <p>
+        Desenvolvido por Leonardo Santana - Projeto Challenge Oracle Next
+        Education T6
+      </p>
+      <div class="links">
+        <i class="bx bxl-linkedin-square"></i>
+        <a
+          href="https://www.linkedin.com/in/leonardo-santana-2460a8202"
+          target="_blank"
+          >Me conecte no meu Linkedin</a
+        >
+      </div>
+      <div class="links">
+        <i class="bx bxl-github"></i>
+        <a href="https://github.com/Lsantana95" target="_blank"
+          >Siga o meu Github</a
+        >
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

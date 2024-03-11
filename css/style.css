@@ -1,0 +1,235 @@
+@import url("https://fonts.cdnfonts.com/css/adobe-caslon-pro");
+
+/* Reset de estilos e configurações globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Adobe Caslon Pro", sans-serif;
+  cursor: url("data:image/x-icon;base64,AAACAAEAICAQAAUABgDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/+UAANQA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAEAEAAAAAAAAAAAAAAAAAABAAEAAAAAAAAAAAAAAAAAAQAAEAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAABAAAAIiIiIiIAAAAAAAAAAQAAAAAAAAAgAAAAAAAAAAEAAAAAAAACAAAAAAAAAAABAAAAAAAAIAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAAEAAAAAACAAAAAAAAAAAAABAAAAAAIAAAAAAAAAAAAAAQAAAAAgAAAAAAAAAAAAAAEAAAACAAAAAAAAAAAAAAABAAAAIAAAAAAAAAAAAAAAAQAAAgAAAAAAAAAAAAAAAAEAACAAAAAAAAAAAAAAAAABAAIAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAAECAAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////////////9/////P////x////8P////B////wP///8B////AAB//wAA//8AAf//AAP//wAH//8AD///AB///wA///8Af///AP///wH///8D////B////w////8f////P////3/////////////////////////w=="),
+    auto;
+}
+
+/* Definição de variáveis de cores */
+:root {
+  --primary-color: #434441;
+  --secondary-color: #3199ed;
+  --third-color: #ed0e11;
+  --color-box: #b8b5b5;
+  --color-white: #ffffff;
+  --color-hover: #f12323cc;
+  --color-footer: #0a0aa2d7;
+  --color-footer-p: #110c0ca6;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+  background-color: var(--secondary-color);
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+/* Logo Alura */
+.nav {
+  margin: 2% 0%;
+}
+
+/* Estilos do conteúdo principal da página */
+.program {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2% 0% 0% 0%;
+  flex-grow: 1;
+  min-height: 80vh;
+}
+
+.program__page {
+  height: auto;
+  width: 100%;
+  margin: 0% 8%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos da área de texto de entrada do usuário */
+.program__textArea {
+  background-color: var(--color-box);
+  height: 100%;
+  width: 100%;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  overflow-x: hidden;
+  resize: none;
+  border: 2px solid var(--third-color);
+  outline: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding-left: 2px;
+  font-weight: 600;
+}
+
+.program__textArea::placeholder {
+  color: var(--primary-color);
+  font-size: 20px;
+  height: auto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding-left: 2px;
+  font-weight: 600;
+}
+
+.program__p {
+  margin-top: auto;
+  font-size: 16px;
+  color: var(--third-color);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+}
+
+.program__alert-icon {
+  margin-right: 8px;
+  font-size: 0.9rem;
+}
+
+.program__buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 1% 0;
+}
+
+.buttons__button1 {
+  width: 75%;
+  padding: 24px;
+  border-radius: 24px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.buttons__button1:hover {
+  background-color: var(--color-hover);
+}
+
+.buttons__button2 {
+  width: 75%;
+  padding: 24px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.buttons__button2:hover {
+  background-color: var(--color-hover);
+}
+
+/* Estilos da seção relacionada à mensagem recebida */
+.program__rec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-white);
+  border-radius: 16px;
+  width: 400px;
+  height: auto;
+  margin-right: 2%;
+  padding: 1% 1%;
+  position: relative;
+}
+
+.program__img {
+  width: auto;
+  height: 200px;
+  padding-bottom: 5px;
+}
+
+.program__rec__h1,
+.program__rec__p {
+  align-items: center;
+  text-align: center;
+}
+
+.program__rec__h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.program__rec__p {
+  text-align: center;
+  color: var(--third-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.program__rec__pHidden {
+  text-align: center;
+  align-items: flex-start;
+  margin-bottom: auto;
+  order: -1;
+  padding: 3%;
+  color: var(--third-color);
+  font-size: 24px;
+  width: 100%;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.program__rec__btn {
+  border: 2px solid var(--primary-color);
+  bottom: 1px;
+  padding: 20px;
+  width: 100%;
+  color: var(--primary-color);
+  background-color: var(--color-box);
+  border-radius: 24px;
+  margin-top: auto;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Footer - Rodapé da página */
+footer {
+  padding: 36px;
+  text-align: center;
+  background-color: var(--color-footer);
+}
+
+footer p {
+  font-size: 1.2rem;
+  color: var(--color-footer-p);
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--color-footer-p);
+}
+
+a {
+  font-size: 20px;
+}
+
+.links i {
+  font-size: 30px;
+  color: var(--color-footer-p);
+  transition: all 0.5s ease-in-out;
+}
+
+.links i:hover {
+  transform: scale(1.3);
+}
