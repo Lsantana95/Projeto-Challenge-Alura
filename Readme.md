@@ -6,6 +6,10 @@
 
 Veja aqui o layout do desafio [Neste Link](https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?type=design&node-id=0-1&mode=design)
 
+## 🔗 Link do deploy 
+
+Veja o projeto no ar no Github Pages [Neste Link](https://lsantana95.github.io/Projeto-Challenge-Alura/)
+
 ## 💻 Demonstração
 
 <img src="./assets/Projeto-Challenge.gif">
